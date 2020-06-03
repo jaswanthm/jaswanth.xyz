@@ -116,6 +116,14 @@ ContentView()
     .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
 ```
 
+__#6 - Testing using the same framework as dev__
+
+I moved away from appium a few years ago since it was a siloed way of looking at UI testing. It wasn't able to keep up with the pace of improvements in XCUI tests or Espresso/UI automator. Therefore, this also validated our decisions on how important it is to keep you tests as close to the dev framework as possible. 
+
 ### Conclusion
 
 This is a very personalised experience for me. I am in no way saying that every tester should write his/her own app to be good at testing. What I've tried to establish here, is the way I see testing. I see it as a Gray box rather a black box. Understanding the native frameworks allowed me to come up with better ways to tackle UI testing. 
+
+### Credits
+
+_Wallboard as a concept and an idea was a brain child of my mentor [Kelly Wason](https://au.linkedin.com/in/kelly-wason-30000)_
