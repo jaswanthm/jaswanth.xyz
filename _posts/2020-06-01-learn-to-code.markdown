@@ -32,30 +32,89 @@ Now that I knew how SwiftUI works and having written an app using it, I was able
 
 #### Learnings 
 
-#1 
-
-The way swiftUI handles accessibility ID. 
+__#1 - The way swiftUI handles accessibility ID.__
 
 ```
 Button(action: {}, label: { Text(“Submit”) }) 
         .accessibility(identifier: "button_submit")
 ```
 
-#2
+__#2 - Making a view accessible.__
 
-Making a view accessible. Most of the challenges when writing UI tests comes when writing tests for lists and scrollviews. BitWall app helped me understand the dynamics of it better. Most importantly how an item in a listview can be made accessible, since usually an item view is a combination of controls where all of them can be accessible. 
+Most of the challenges when writing UI tests comes when writing tests for lists and scrollviews. BitWall app helped me understand the dynamics of it better. Most importantly how an item in a listview can be made accessible, since usually an item view is a combination of controls where all of them can be accessible. 
 
-#3
+The biggest part of my learning here is to understand how to include or exclude elements for accessibility 
 
-Understanding the lifecycle of the app
+```
+VStack {
+    Text("Build Number")
+    Text("10")
+        .font(.title)
+}
+.accessibilityElement(children: .combine)
+```
 
-#4
+versus
 
-State injection 
+```
+VStack {
+    Text("Build number")
+    Text("10")
+        .font(.title)
+}
+.accessibilityElement(children: .ignore)
+.accessibility(label: Text("Build number 10"))
+```
 
-#5 
+The first example combines all textview into one whereas the second example won't even be visible to voiceover, but will provide an alternative voice over label.
 
-Testability
+This ended up being a really huge learning for me to understand how to access complex UI elements with SwiftUI in XCUI tests.
+
+__#3 - Understanding the lifecycle of the app__
+
+When an app is following a reactive architecture, understanding how everything comes together, will help identify risky areas that we will need tests for. 
+
+For example, 
+
+View Controller uses
+
+```
+loadView
+viewDidLoad
+viewWillAppear
+viewWillLayoutSubviews
+viewDidLayoutSubviews
+viewDidAppear
+viewWillDisappear
+viewDidDisappear
+viewDidUnload
+```
+
+whereas SwiftUI has the following 
+
+```
+Initialising the view
+States and bindings
+onAppear
+onDisappear
+```
+
+__#4 - removeTraits__
+
+In XCUI tests we tend to read elements based on traits, but here you will be able to use removeTraits to modify that behaviour, which is important to understand from a testing point of view. 
+
+```
+.accessibility(removeTraits: .isImage)
+```
+
+__#5 - Previews__
+
+SwiftUI has a really good preview mechanism. I found that one way to predict possible issues with the layout before testing, is to have really good preview data, possibly a curated list of possible test data. This helps to envision the posible variations that the view can have. And with the preview allowing you to choose different device sizes, a lot of issues can be curbed during development. 
+
+```
+ContentView()
+    .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
+```
 
 ### Conclusion
 
