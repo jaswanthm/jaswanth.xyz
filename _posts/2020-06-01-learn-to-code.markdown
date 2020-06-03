@@ -4,6 +4,9 @@ title:  "Learning to code, to become a better Tester - a story."
 date:   2020-06-01 14:15:43 +1000
 categories: Testing
 ---
+
+By [Jaswanth Manigundan](https://www.linkedin.com/in/-jaswanth/)
+
 ### Introduction
 
 Dreamlab went through a major refactoring and performance improvement phase over the last few months, in preparation for the global rollout. The app added 14 new regions to its suite. As a part of it, the android app was refactored to conform to the latest best practices, the backend was performance tested and as a result went through a string of performance updates and finally the iOS app changed all its screen to SwiftUI. In this article I would like to share my experience in working on the iOS app and some of the challenges testing it, with emphasis on UI testing.
