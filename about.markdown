@@ -1,18 +1,17 @@
 ---
 layout: page
 title: About
+sidebar_link: true
 permalink: /about/
 ---
+#### BASICs
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I have been programming from a very young age. I started with languages like __BASIC__ and __LOGO__ when I was a kid and I made my way through __C, C++ and Java__. This strong base helped me excel in the work I do. I was hungry to learn more after my Bachelors in Engineering (Computer Science), and therefore I moved to Melbourne to do my Masters in Software Engineering at the __University of Melbourne__.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+#### Mobile Apps
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I was so passionate about mobile apps that I built my career around it. I've worked in a variety of domains and in a variety of roles in the mobile app space. I've led a range of engineering teams through the course of last __10 years__. From leading a team in a startup to leading a group of high skilled engineering, I take pride in the work I do and also proud of the people I've helped grow and up-skill.
 
+#### Testing & Testability
 
-[jekyll-organization]: https://github.com/jekyll
+Working in the testing space for the past 4 years has given me a different perspective to look at code. __Testability__ is something I promote and try to bring into any product I work on. My latest work with __Visual Snapshot Testing__ is something I consider a big milestone in my career. 
