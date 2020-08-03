@@ -7,7 +7,11 @@ categories: Testing
 
 By [Jaswanth Manigundan](https://www.linkedin.com/in/-jaswanth/)
 
+![alt text](/assets/images/xcode.jpg "Header")
+
 ### Introduction
+
+[DreamLab](https://www.vodafone.com.au/foundation/dreamlab) is a multi-award winning app that uses the processing power of your idle phone to help speed up the pace of vital research discovery while you sleep. 
 
 Dreamlab went through a major refactoring and performance improvement phase over the last few months, in preparation for the global rollout. The app added 14 new regions to its suite. As a part of it, the android app was refactored to conform to the latest best practices, the backend was performance tested and as a result went through a string of performance updates and finally the iOS app changed all its screen to SwiftUI. In this article I would like to share my experience in working on the iOS app and some of the challenges testing it, with emphasis on UI testing.
 
@@ -129,4 +133,4 @@ This is a very personalised experience for me. I am in no way saying that every 
 
 ### Credits
 
-_Wallboard as a concept and an idea was a brain child of my mentor [Kelly Wason](https://au.linkedin.com/in/kelly-wason-30000)_
+_BitWall,a type of Wallboard as a concept and an idea is a brain child of my mentor [Kelly Wason](https://au.linkedin.com/in/kelly-wason-30000)_
