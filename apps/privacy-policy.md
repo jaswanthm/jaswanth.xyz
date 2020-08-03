@@ -2,7 +2,7 @@
 ---
 layout: page
 title: Privacy Policy
-permalink: /bitwall/privacy-policy
+permalink: /privacy-policy
 sidebar_link: false
 ---
 
