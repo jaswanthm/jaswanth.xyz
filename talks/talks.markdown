@@ -20,7 +20,7 @@ I will be talking about implementing CI with mobile in mind. Here is a short abs
 
 ## Automation Week 2021 
 
-![Automation Week 2021](/assets/images/automation-week-21)
+![Automation Week 2021](/assets/images/automation-week-21.png)
 
 I'll be presenting my experience report on visual testing using BackstopJS. Here is a link to the event [Automation Week 2021 - Visual Testing](https://www.ministryoftesting.com/events/ui-automation-week-february-2021/experience-reports-part-3)
 
