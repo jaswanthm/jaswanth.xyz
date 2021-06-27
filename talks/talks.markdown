@@ -3,7 +3,19 @@ layout: page
 title: Talks
 permalink: /talks
 sidebar_link: true
+
 ---
+
+
+# Bitrise 
+
+[Bitrise Feature](https://blog.bitrise.io/post/bitrise-open-source-and-the-api-bitrise-wall-mobile-app)
+
+<img src="https://assets-global.website-files.com/6046919f8276b876330735e2/60d1aa9821db23c408af321a_723_G_CM%20Bitrise%20API%20Open%20Source.png" width="600" height="400">
+
+I was featured by Bitrise and spoke about my experience and work on mobile app development, testing and CI/CD
+
+https://www.youtube.com/watch?v=Ca2PSPK1hXs&ab_channel=Bitrise
 
 # SauceCon 2021
 
@@ -11,10 +23,9 @@ sidebar_link: true
 
 <img src="https://saucecon.com/wp-content/uploads/2020/12/SC21_bots@2x.png" width="600" height="480">
 
-I will be talking about implementing CI with mobile in mind. Here is a short abstract 
+I spoke about implementing CI with mobile in mind.
 
-> Setting up CI/CD itself is a challenging task, especially if you are starting from scratch. Implementing one for mobile apps has its own complications like signing the apps and running tests on devices/simulators. In this talk, I will talk about the best way to set up mobile app build pipelines from scratch. In order to view an end-to-end example, I will show how to build an android and iOS app pipeline of the SwagLabs react native app.
-
+https://www.youtube.com/watch?v=honf6nVlVRM&ab_channel=SauceLabs
 
 # Ministry of Testing
 
