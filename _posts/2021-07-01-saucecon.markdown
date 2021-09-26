@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Saucecon 2021"
+date:   2021-07-01 14:15:43 +1000
+categories: Testing
+---
+
+# SauceCon 2021
+
+[Saucecon 2021](https://saucecon.com/)
+
+<img src="https://saucecon.com/wp-content/uploads/2020/12/SC21_bots@2x.png" width="600" height="480">
+
+I spoke about implementing CI with mobile in mind.
+
+https://www.youtube.com/watch?v=honf6nVlVRM&ab_channel=SauceLabs
