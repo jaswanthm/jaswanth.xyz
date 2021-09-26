@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Testbash Online 2021"
+date:   2021-09-22 14:15:43 +1000
+categories: Testing
+excerpt_separator: <!--more-->
+---
+
+New talk coming up! 
+
+<!--more-->
+
+Will be talking @ Testbash online 2021 regarding my automation setup and how I was able to achieve hermetic tests [Test.bash() Online - tools 2021](https://www.ministryoftesting.com/events/test-bash-2021)

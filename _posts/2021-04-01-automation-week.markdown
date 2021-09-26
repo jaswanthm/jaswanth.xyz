@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Automation Week"
-date:   2021-04-01 14:15:43 +1000
+date:   2021-02-26 14:15:43 +1000
 categories: Testing
 excerpt_separator: <!--more-->
 ---
