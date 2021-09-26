@@ -2,28 +2,22 @@ email:
   id: 'jaswanth.ooty@gmail.com'
   href: 'mailto:'
   title: 'Email'
-  fa-icon: 'fa-envelope-square'
+  fa-icon: 'fa-envelope'
 
 twitter:
   id: 'jaswanthm'
   href: 'https://www.twitter.com/'
   title: 'Twitter'
-  fa-icon: 'fa-twitter-square'
+  fa-icon: 'fa-twitter'
 
 github:
   id: 'jaswanthm'
   href: 'https://github.com/'
   title: 'GitHub'
-  fa-icon: 'fa-github-square'
+  fa-icon: 'fa-github'
 
 linkedin:
   id: '-jaswanth'
   href: 'https://www.linkedin.com/in/'
   title: 'LinkedIn'
-  fa-icon: 'fa-linkedin-square'
-
-rss:
-  id: '/feed.xml'
-  href:
-  title: 'RSS'
-  fa-icon: 'fa-rss-square'
+  fa-icon: 'fa-linkedin'
