@@ -6,10 +6,6 @@ categories: Testing
 excerpt_separator: <!--more-->
 ---
 
-# Ministry of Testing
-
-## Automation Week 2021 
-
 ![Automation Week 2021](/assets/images/automation-week-21.png)
 
 I'll be presenting my experience report on visual testing using BackstopJS. Here is a link to the event [Automation Week 2021 - Visual Testing](https://www.ministryoftesting.com/events/ui-automation-week-february-2021/experience-reports-part-3)

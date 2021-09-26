@@ -6,10 +6,6 @@ categories: Testing
 excerpt_separator: <!--more-->
 ---
 
-# Ministry of Testing
-
-## Test.bash('Online');
-
 <img src="https://embed-ssl.wistia.com/deliveries/b0e3d79c2481239644c9b5586372f560.jpg?image_crop_resized=680x480" width="680" height="480">
 
 <!--more-->

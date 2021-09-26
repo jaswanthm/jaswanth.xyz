@@ -6,8 +6,6 @@ categories: Testing
 excerpt_separator: <!--more-->
 ---
 
-# SauceCon 2021
-
 [Saucecon 2021](https://saucecon.com/)
 
 <img src="https://saucecon.com/wp-content/uploads/2020/12/SC21_bots@2x.png" width="600" height="480">
