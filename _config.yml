@@ -32,7 +32,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   ++Testability 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://jaswanth.xyz # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  jaswanthm
+github_username: jaswanthm
 linkedin_username: jaswanthm
 
 # Build settings
@@ -43,6 +43,11 @@ plugins:
   - jekyll-paginate
 
 paginate: 5
+
+# generate social links in footer
+social_links:
+  twitter: jaswanthm
+  github: jaswanthm
 
 # Sidebar link settings
 sidebar_home_link:  true
