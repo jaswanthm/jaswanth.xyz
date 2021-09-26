@@ -3,6 +3,7 @@ layout: post
 title:  "Bitrise feature"
 date:   2021-06-01 14:15:43 +1000
 categories: Testing
+excerpt_separator: <!--more-->
 ---
 
 # Bitrise 
@@ -14,3 +15,5 @@ categories: Testing
 I was featured by Bitrise and spoke about my experience and work on mobile app development, testing and CI/CD
 
 https://www.youtube.com/watch?v=Ca2PSPK1hXs&ab_channel=Bitrise
+
+<!--more-->

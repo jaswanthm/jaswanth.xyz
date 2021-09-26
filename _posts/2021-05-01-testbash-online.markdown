@@ -3,6 +3,7 @@ layout: post
 title:  "Testbash Online"
 date:   2021-05-01 14:15:43 +1000
 categories: Testing
+excerpt_separator: <!--more-->
 ---
 
 # Ministry of Testing
@@ -10,6 +11,8 @@ categories: Testing
 ## Test.bash('Online');
 
 <img src="https://embed-ssl.wistia.com/deliveries/b0e3d79c2481239644c9b5586372f560.jpg?image_crop_resized=680x480" width="680" height="480">
+
+<!--more-->
 
 <img src="https://embed-ssl.wistia.com/deliveries/e9b65c25202dc645128d4ec0a29cd62e.jpg?image_crop_resized=680x480" width="680" height="480">
 

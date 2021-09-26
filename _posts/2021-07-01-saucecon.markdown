@@ -3,6 +3,7 @@ layout: post
 title:  "Saucecon 2021"
 date:   2021-07-01 14:15:43 +1000
 categories: Testing
+excerpt_separator: <!--more-->
 ---
 
 # SauceCon 2021
@@ -14,3 +15,5 @@ categories: Testing
 I spoke about implementing CI with mobile in mind.
 
 https://www.youtube.com/watch?v=honf6nVlVRM&ab_channel=SauceLabs
+
+<!--more-->
