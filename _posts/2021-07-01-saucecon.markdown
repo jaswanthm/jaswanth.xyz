@@ -10,8 +10,6 @@ excerpt_separator: <!--more-->
 
 <img src="https://saucecon.com/wp-content/uploads/2020/12/SC21_bots@2x.png" width="600" height="480">
 
-I spoke about implementing CI with mobile in mind.
-
-https://www.youtube.com/watch?v=honf6nVlVRM&ab_channel=SauceLabs
+I spoke about implementing CI with mobile in mind. You can watch it here [Youtube](https://www.youtube.com/watch?v=honf6nVlVRM&ab_channel=SauceLabs)
 
 <!--more-->
