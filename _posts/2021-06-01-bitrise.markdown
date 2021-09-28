@@ -12,6 +12,7 @@ excerpt_separator: <!--more-->
 
 I was featured by Bitrise and spoke about my experience and work on mobile app development, testing and CI/CD
 
-https://www.youtube.com/watch?v=Ca2PSPK1hXs&ab_channel=Bitrise
+You can watch it here [YouTube](https://www.youtube.com/watch?v=Ca2PSPK1hXs&ab_channel=Bitrise) and you can read about it here 
+[Bitrise Feature](https://blog.bitrise.io/post/bitrise-open-source-and-the-api-bitrise-wall-mobile-app)
 
 <!--more-->
