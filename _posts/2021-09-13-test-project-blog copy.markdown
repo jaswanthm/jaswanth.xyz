@@ -3,6 +3,8 @@ layout: post
 title:  "My Recent Obsession with Hermetic Tests"
 date:   2021-09-13 14:15:43 +1000
 categories: Testing
+img: bg.jpg
+tags: Testing
 excerpt_separator: <!--more-->
 ---
 

@@ -2,7 +2,9 @@
 layout: post
 title:  "Testbash Online 2021"
 date:   2021-09-22 14:15:43 +1000
-categories: Testing
+categories: Events
+img: bg5.jpeg
+tags: Events
 excerpt_separator: <!--more-->
 ---
 
