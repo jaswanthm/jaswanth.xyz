@@ -2,11 +2,13 @@
 layout: post
 title:  "Automation Week"
 date:   2021-02-26 14:15:43 +1000
-categories: Testing
+categories: Events
+img: bg5.jpeg
+tags: Events
 excerpt_separator: <!--more-->
 ---
 
-![Automation Week 2021](/assets/images/automation-week-21.png)
+![Automation Week 2021](/images/pages/automation-week-21.png)
 
 I'll be presenting my experience report on visual testing using BackstopJS. Here is a link to the event [Automation Week 2021 - Visual Testing](https://www.ministryoftesting.com/events/ui-automation-week-february-2021/experience-reports-part-3)
 

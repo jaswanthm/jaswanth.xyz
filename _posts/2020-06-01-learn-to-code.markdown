@@ -2,13 +2,14 @@
 layout: post
 title:  "Learning to code, to become a better Tester - a story."
 date:   2020-06-01 14:15:43 +1000
-categories: Testing
+img: bg2.jpeg
+tags: Testing
 excerpt_separator: <!--more-->
 ---
 
 By [Jaswanth Manigundan](https://www.linkedin.com/in/-jaswanth/)
 
-![alt text](/assets/images/xcode.jpg "Header")
+![alt text](/images/pages/xcode.jpg "Header")
 
 ### Introduction
 
@@ -34,7 +35,7 @@ So first I completed the SwiftUI essentials course from Apple on a weekend. It w
 
 Then I jumped into bitrise's API and came up with a client app. 
 
-<img src="/assets/images/bitwall-ios.gif" width="240" height="480"/>
+<img src="/images/pages/bitwall-ios.gif" width="240" height="480"/>
 
 ### Some of my learnings, from a testing perspective are
 

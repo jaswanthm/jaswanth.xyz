@@ -1,61 +1,78 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-markdown:         kramdown
-highlighter:      rouge
-
-title: Jaswanth
-tagline: Jas' blog
-description: >- # this means to ignore newlines until "baseurl:"
-  Serverless. 
-  React.
-  Android.
-  iOS.
-  ReactNative.
-  Bot.
-  ++Testability 
+title: jaswanth.xyz
+description: Jas' blog
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://jaswanth.xyz # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jaswanth.xyz/" # the base hostname & protocol for your site, e.g. http://example.com
 
-author:
-  name:           'Jaswanth Manigundan'
-  url:            https://www.linkedin.com/in/-jaswanth/
+# Banner Section
+hero: 5.jpg
+hero-title: Jaswanth
+hero-description: Testing | Mobile | Web | Automation | Microservices 
 
+# Author - Creator
+author-name: Jaswanth Manigundan
+author-image: jas.jpg
+about-author: I'm a developer turned tester who is very passionate about building quality software..!
+author-email: jaswanth.ooty@gmail.com
+author-twitter: https://twitter.com/jaswanth_m
+# author-facebook: https://twitter.com/
+# author-instagram: https://www.instagram.com/
+# author-pinterest: https://pinterest.com/
+
+# # Other Authors - here you can add Other authors. For example Natali_Braxton
+# authors:
+#   Natali_Braxton:
+#     author-name: Natali Braxton
+#     author-image: 111.jpg
+#     about-author: My name is Natali Braxton. I love walking, I play the guitar in my spare time. And also write articles about different technologies.
+#     author-email: natali.example@gmail.com
+#     author-twitter: https://twitter.com/
+#     author-facebook: https://twitter.com/
+#     author-instagram: https://www.instagram.com/
+#     author-pinterest: https://pinterest.com/
+
+# Social Media Links (Links are located in hero and footer)
+twitter: https://twitter.com/jaswanth_m
+# facebook: https://facebook.com/
+# google-plus: https://plus.google.com/
+# instagram: https://www.instagram.com/
+# pinterest: https://pinterest.com/
+# youtube: https://www.youtube.com/
+
+# Contact Form Settings
+contact-subtitle: Get in touch!
+
+# Google Analytics
+google-analytics: G-04MTXH90WZ # Add your identifier. For example UA-99631805-1.
+
+# Newsletter
+mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+# Comment Section (Disqus)
+disqus-identifier: jaswanth-xyz # Add your shortname for Disqus Comment. For example mr-brown
 
 # Build settings
-theme: jekyll-theme-hydeout
+markdown: kramdown
+permalink: pretty
+paginate: 9
+paginate_path: "/page/:num"
+
+# Pages path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
 plugins:
-  - jekyll-feed
-  - jekyll-gist
   - jekyll-paginate
+  - jekyll-feed
 
-paginate: 5
+include:
+  - _pages
 
-# Sidebar link settings
-sidebar_home_link:  true
-# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
-                                # page. If you change your paginate_path,
-                                # set this to the root of the paginate_path
-                                # to enable a separate blog link.
-
-# Disqus Comments
-disqus:
-    # Leave shortname blank to disable comments site-wide.
-    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-    shortname: jaswanth-xyz
+# Exclude from processing.
+exclude:
+ - Gemfile
+ - Gemfile.lock
+ - vendor

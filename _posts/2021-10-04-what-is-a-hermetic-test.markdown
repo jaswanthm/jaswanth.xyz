@@ -3,6 +3,8 @@ layout: post
 title:  "What is a hermetic test ?"
 date:   2021-10-04 14:15:43 +1000
 categories: Testing
+img: bg4.png
+tags: Testing
 excerpt_separator: <!--more-->
 ---
 

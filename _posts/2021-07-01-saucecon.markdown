@@ -2,7 +2,9 @@
 layout: post
 title:  "Saucecon 2021"
 date:   2021-04-01 14:15:43 +1000
-categories: Testing
+categories: Events
+img: bg6.jpeg
+tags: Events
 excerpt_separator: <!--more-->
 ---
 
