@@ -5,7 +5,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jaswanth.xyz/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Banner Section
-hero: 5.jpg
+hero: bgnew.jpg
 hero-title: Jaswanth
 hero-description: Testing | Mobile | Web | Automation | Microservices 
 
