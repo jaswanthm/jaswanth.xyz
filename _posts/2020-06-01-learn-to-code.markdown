@@ -2,7 +2,7 @@
 layout: post
 title:  "Learning to code, to become a better Tester - a story."
 date:   2020-06-01 14:15:43 +1000
-img: bg2.jpeg
+img: bg3.jpeg
 tags: Testing
 excerpt_separator: <!--more-->
 ---
