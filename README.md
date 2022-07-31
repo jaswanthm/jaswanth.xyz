@@ -1,1 +1,0 @@
-# Jekyll website for jaswanth.xyz

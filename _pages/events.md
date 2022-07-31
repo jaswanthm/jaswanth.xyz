@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Events
-image: bg8.jpg
+image: bg.jpg
 ---
 
 Here are the list of events that I spoke at over the past few years...

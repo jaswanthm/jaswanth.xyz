@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "What is a hermetic test ?"
+title:  "What is a hermetic test ? Let's find out!"
 date:   2021-10-04 14:15:43 +1000
 categories: Testing
-img: bg8.jpg
+image: assets/images/1.jpg
 tags: Testing
-excerpt_separator: <!--more-->
+beforetoc: "What is a hermetic test ? Let's find out!"
+toc: true
+
 ---
 
 ### What is hermetic test ?

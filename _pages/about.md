@@ -1,8 +1,12 @@
 ---
 layout: page
-title: About
-image: jas.jpg
+title: About 
+permalink: /about
+comments: false
+image: assets/images/jas.jpg
+imageshadow: true
 ---
+
 I’m Jas from Melbourne. I currently work at Culture Amp as a Lead Quality Coach, specialising in test automation and testability. 
 
 I have worked in the mobile app development space for almost a decade, where I saw mobile devices and operating systems get better and better by the day. My fascination towards mobile devices made me start my professional career as a mobile app developer. But my quest to build better apps and write code that is much more testable lead me to transition into a test automation engineer specialising in mobile. 

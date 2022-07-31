@@ -1,80 +1,71 @@
-# Site settings
-title: jaswanth.xyz
-description: Jas' blog
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jaswanth.xyz/" # the base hostname & protocol for your site, e.g. http://example.com
+# Site
+name: "jaswanth.xyz"
+title: "jaswanth.xyz"
+description: "Jas' blog"
+baseurl: ""
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+google_analytics: 'G-04MTXH90WZ'
+disqus: 'jaswanth-xyz'
+mailchimp-list: # 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+include: ["_pages"]
+permalink: /:title
+email: jaswanth.ooty@gmail.com
 
-# Banner Section
-hero: pages/bg9.jpg
-hero-title: Jaswanth
-hero-description: Testing | Mobile | Web | Automation | Microservices 
+# Authors
+authors:
+  jas:
+    name: Jaswanth Manigundan
+    display_name: Jas
+    avatar: 'assets/images/jas.jpg'
+    email: jaswanth.ooty@gmail.com
+    web: https://www.jaswanth.xyz
+    twitter: https://twitter.com/jaswanth_m
+    linkedin: https://www.linkedin.com/in/-jaswanth/
+    description: I'm a developer turned tester who is very passionate about building quality software..!
 
-# Author - Creator
-author-name: Jaswanth Manigundan
-author-image: jas.jpg
-about-author: I'm a developer turned tester who is very passionate about building quality software..!
-author-email: jaswanth.ooty@gmail.com
-author-twitter: https://twitter.com/jaswanth_m
-author-linkedin: https://www.linkedin.com/in/-jaswanth/
-# author-facebook: https://twitter.com/
-# author-instagram: https://www.instagram.com/
-# author-pinterest: https://pinterest.com/
-
-# # Other Authors - here you can add Other authors. For example Natali_Braxton
-# authors:
-#   Natali_Braxton:
-#     author-name: Natali Braxton
-#     author-image: 111.jpg
-#     about-author: My name is Natali Braxton. I love walking, I play the guitar in my spare time. And also write articles about different technologies.
-#     author-email: natali.example@gmail.com
-#     author-twitter: https://twitter.com/
-#     author-facebook: https://twitter.com/
-#     author-instagram: https://www.instagram.com/
-#     author-pinterest: https://pinterest.com/
-
-# Social Media Links (Links are located in hero and footer)
-twitter: https://twitter.com/jaswanth_m
-linkedin: https://www.linkedin.com/in/-jaswanth/
-# facebook: https://facebook.com/
-# google-plus: https://plus.google.com/
-# instagram: https://www.instagram.com/
-# pinterest: https://pinterest.com/
-# youtube: https://www.youtube.com/
-
-# Contact Form Settings
-contact-subtitle: Get in touch!
-
-# Google Analytics
-google-analytics: G-04MTXH90WZ # Add your identifier. For example UA-99631805-1.
-
-# Newsletter
-mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
-
-# Comment Section (Disqus)
-disqus-identifier: jaswanth-xyz # Add your shortname for Disqus Comment. For example mr-brown
-
-# Build settings
-markdown: kramdown
-permalink: pretty
-paginate: 9
-paginate_path: "/page/:num"
-
-# Pages path
-defaults:
-  - scope:
-      path: '_pages'
-    values:
-      permalink: /:basename:output_ext
-
+# Plugins
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-figure
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+highlighter: none
+markdown: kramdown
+kramdown:
+   syntax_highlighter_opts:
+      disable : true
 
-include:
-  - _pages
+# # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+# adsense: "disabled"
+# adsense-data-ad-client: "ca-pub-3412143450191416"
+# adsense-data-ad-slot: "1363087678"
 
-# Exclude from processing.
-exclude:
- - Gemfile
- - Gemfile.lock
- - vendor
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+# Post Author Box ("enabled" or "disabled")
+authorbox: "enabled"
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

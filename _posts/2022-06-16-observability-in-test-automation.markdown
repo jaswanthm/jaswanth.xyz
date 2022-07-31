@@ -3,9 +3,12 @@ layout: post
 title:  "Observability in Test Automation"
 date:   2022-06-16 14:15:43 +1000
 categories: Testing
-img: bg5.jpeg
+image: assets/images/2.jpg
 tags: Testing
 excerpt_separator: <!--more-->
+beforetoc: "I have recently started my journey with observability, specifically for test automation.."
+toc: true
+
 ---
 
 ### Observability in Test Automation
