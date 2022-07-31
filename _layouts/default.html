@@ -16,7 +16,6 @@
 
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 
-{% if jekyll.environment == 'production' %}
 <!-- change your GA id in _config.yml -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
 <script>
@@ -26,7 +25,6 @@
 
   gtag('config', '{{site.google_analytics}}');
 </script>
-{% endif %}
 
 </head>
 
