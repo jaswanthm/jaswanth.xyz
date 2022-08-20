@@ -1,11 +1,15 @@
 ---
 layout: page
 title: Events
-image: bg.jpg
+image: assets/images/bg.jpg
+permalink: /events
+comments: false
+imageshadow: true
 ---
 
 Here are the list of events that I spoke at over the past few years...
 
+{: .table .table-striped .table-responsive}
 | Topic                                         | Event                          | Link                                                                                                                                                                |
 |-----------------------------------------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tooling for Automated Testing                 | Test.bash(); 2021              | [Ministry of Testing - Talk recording](https://www.ministryoftesting.com/dojo/series/test-bash-2021/lessons/tooling-for-automated-testing-with-jaswanth-manigundan) |
