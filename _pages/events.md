@@ -9,6 +9,14 @@ imageshadow: true
 
 Here are the list of events that I spoke at over the past few years...
 
+# 2023
+
+{: .table .table-striped .table-responsive}
+| Topic                                         | Event                          | Link                                                                                                                                                                |
+|-----------------------------------------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Write tests for Async Systems                 | Automation Guild 2023          | [Automation Guild 2023](https://guildconferences.com/ag-2023/)   |
+
+
 # 2022
 
 {: .table .table-striped .table-responsive}
