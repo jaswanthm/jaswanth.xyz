@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Should you use native automation frameworks ?"
-date:   2023-05-11 14:15:43 +1000
+date:   2022-08-22 14:15:43 +1000
 categories: Testing
 tags: Testing
 image: assets/images/joe.jpeg
