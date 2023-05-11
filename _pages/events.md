@@ -14,6 +14,7 @@ Here are the list of events that I spoke at over the past few years...
 {: .table .table-striped .table-responsive}
 | Topic                                         | Event                          | Link                                                                                                                                                                |
 |-----------------------------------------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Observability in Test Automation              | Testing Stage 2023             | [Testing Stage 2023](https://www.youtube.com/watch?v=tpW_3bBRuPA&ab_channel=CodeSpaceITeducation)   |
 | Write tests for Async Systems                 | Automation Guild 2023          | [Automation Guild 2023](https://guildconferences.com/ag-2023/)   |
 
 
