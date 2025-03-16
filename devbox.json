@@ -1,0 +1,16 @@
+{
+    "packages": [
+      "ruby_3_1",
+      "bundler",
+      "gcc",
+      "gnumake"
+    ],
+    "shell": {
+      "init_hook": [
+        "bundle install"
+      ]
+    },
+    "env": {
+      "LANG": "en_US.UTF-8"
+    }
+  }

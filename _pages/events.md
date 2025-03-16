@@ -9,11 +9,26 @@ imageshadow: true
 
 Here are the list of events that I spoke at over the past few years...
 
+# 2025
+
+{: .table .table-striped .table-responsive}
+| Topic                                         | Event                          | Link                                                                                                                                                                |
+|-----------------------------------------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Git blame vs Team blame                       | DDD Melbourne 2025             | [DDD Melbourne 2025](https://www.dddmelbourne.com/agenda?sessionId=2b2e02b8-f69b-4e2c-9467-3d0b48f64ea8)   |
+
+# 2024
+
+{: .table .table-striped .table-responsive}
+| Topic                                         | Event                          | Link                                                                                                                                                                |
+|-----------------------------------------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Take your first steps towards Observability   | DDD Melbourne 2024             | [DDD Melbourne 2024](https://www.youtube.com/watch?v=f9ItpOxCdsY&ab_channel=DDDMelbourne)   |
+
 # 2023
 
 {: .table .table-striped .table-responsive}
 | Topic                                         | Event                          | Link                                                                                                                                                                |
 |-----------------------------------------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Breaking down E2E tests into low level tests  | Automation Guild 2023          | [Testbash Liverpool 2023](https://www.youtube.com/watch?v=5x9dTRRHotQ&ab_channel=MinistryofTesting)   |
 | Observability in Test Automation              | Testing Stage 2023             | [Testing Stage 2023](https://www.youtube.com/watch?v=tpW_3bBRuPA&ab_channel=CodeSpaceITeducation)   |
 | Write tests for Async Systems                 | Automation Guild 2023          | [Automation Guild 2023](https://guildconferences.com/ag-2023/)   |
 

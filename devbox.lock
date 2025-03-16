@@ -1,0 +1,22 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "bundler": {
+      "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#bundler",
+      "source": "nixpkg"
+    },
+    "gcc": {
+      "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#gcc",
+      "source": "nixpkg"
+    },
+    "gnumake": {
+      "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#gnumake",
+      "source": "nixpkg"
+    },
+    "ruby_3_1": {
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#ruby_3_1",
+      "source": "nixpkg"
+    }
+  }
+}
