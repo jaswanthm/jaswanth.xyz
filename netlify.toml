@@ -1,7 +1,7 @@
 [build]
   base = "site-next"
   command = "npm run build"
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- site-next content _posts _pages _data assets"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "22"
