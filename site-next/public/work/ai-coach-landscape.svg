@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">AI Coach Landscape Placeholder</title>
+  <desc id="desc">Gradient placeholder image for AI Coach work card.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" rx="48" />
+  <circle cx="1320" cy="160" r="120" fill="rgba(255,255,255,0.22)" />
+  <rect x="120" y="130" width="520" height="72" rx="14" fill="rgba(255,255,255,0.25)" />
+  <rect x="120" y="245" width="1000" height="26" rx="10" fill="rgba(255,255,255,0.5)" />
+  <rect x="120" y="290" width="860" height="26" rx="10" fill="rgba(255,255,255,0.4)" />
+  <rect x="120" y="410" width="1360" height="330" rx="22" fill="rgba(15,23,42,0.22)" />
+  <text x="120" y="178" fill="white" font-size="54" font-family="Arial, sans-serif" font-weight="700">AI Coach</text>
+  <text x="120" y="475" fill="white" font-size="36" font-family="Arial, sans-serif">Landscape sample image</text>
+</svg>

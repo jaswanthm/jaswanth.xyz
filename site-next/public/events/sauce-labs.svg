@@ -1,0 +1,14 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#56381C"/>
+      <stop offset="100%" stop-color="#C07A2E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g2)"/>
+  <rect x="88" y="92" width="1024" height="492" rx="26" fill="rgba(24,12,2,0.3)"/>
+  <path d="M125 490 C320 350, 620 565, 1040 420" stroke="#F5E8D7" stroke-width="6" fill="none"/>
+  <text x="130" y="290" fill="#FFF3E2" font-size="58" font-family="Arial, sans-serif">Sauce Labs</text>
+  <text x="130" y="355" fill="#F9E2C2" font-size="36" font-family="Arial, sans-serif">Quality Engineering</text>
+  <text x="130" y="404" fill="#F9E2C2" font-size="36" font-family="Arial, sans-serif">at Scale</text>
+</svg>

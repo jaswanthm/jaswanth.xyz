@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">DDD Melbourne Portrait Placeholder</title>
+  <desc id="desc">Portrait placeholder for DDD Melbourne event card.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)" rx="42"/>
+  <rect x="90" y="100" width="720" height="84" rx="16" fill="rgba(255,255,255,0.3)"/>
+  <rect x="90" y="236" width="640" height="24" rx="10" fill="rgba(255,255,255,0.5)"/>
+  <rect x="90" y="272" width="520" height="24" rx="10" fill="rgba(255,255,255,0.4)"/>
+  <rect x="90" y="352" width="720" height="738" rx="22" fill="rgba(15,23,42,0.22)"/>
+  <text x="120" y="155" fill="white" font-size="42" font-family="Arial, sans-serif" font-weight="700">DDD Melbourne</text>
+  <text x="120" y="418" fill="white" font-size="30" font-family="Arial, sans-serif">Portrait sample</text>
+</svg>

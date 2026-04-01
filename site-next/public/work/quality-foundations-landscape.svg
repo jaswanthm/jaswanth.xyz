@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Quality Foundations Landscape Placeholder</title>
+  <desc id="desc">Landscape placeholder image for Quality Foundations work card.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" rx="48" />
+  <rect x="120" y="120" width="840" height="76" rx="14" fill="rgba(255,255,255,0.27)" />
+  <rect x="120" y="240" width="1100" height="25" rx="9" fill="rgba(255,255,255,0.48)" />
+  <rect x="120" y="280" width="940" height="25" rx="9" fill="rgba(255,255,255,0.38)" />
+  <rect x="120" y="372" width="1360" height="360" rx="22" fill="rgba(15,23,42,0.22)" />
+  <text x="145" y="173" fill="white" font-size="50" font-family="Arial, sans-serif" font-weight="700">Quality Foundations</text>
+  <text x="145" y="438" fill="white" font-size="34" font-family="Arial, sans-serif">Landscape sample image</text>
+</svg>

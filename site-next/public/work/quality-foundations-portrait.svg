@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Quality Foundations Portrait Placeholder</title>
+  <desc id="desc">Portrait placeholder image for Quality Foundations work card.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)" rx="42" />
+  <rect x="96" y="110" width="708" height="82" rx="16" fill="rgba(255,255,255,0.28)" />
+  <rect x="96" y="236" width="520" height="22" rx="9" fill="rgba(255,255,255,0.55)" />
+  <rect x="96" y="271" width="650" height="22" rx="9" fill="rgba(255,255,255,0.44)" />
+  <rect x="96" y="356" width="708" height="724" rx="24" fill="rgba(15,23,42,0.23)" />
+  <text x="124" y="165" fill="white" font-size="40" font-family="Arial, sans-serif" font-weight="700">Quality Foundations</text>
+  <text x="124" y="420" fill="white" font-size="30" font-family="Arial, sans-serif">Portrait sample</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Sales Platform Landscape Placeholder</title>
+  <desc id="desc">Landscape placeholder image for Sales Platform work card.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" rx="48" />
+  <rect x="110" y="120" width="780" height="76" rx="14" fill="rgba(255,255,255,0.25)" />
+  <rect x="110" y="240" width="1180" height="25" rx="9" fill="rgba(255,255,255,0.48)" />
+  <rect x="110" y="280" width="980" height="25" rx="9" fill="rgba(255,255,255,0.38)" />
+  <rect x="110" y="370" width="1380" height="370" rx="22" fill="rgba(15,23,42,0.2)" />
+  <text x="140" y="173" fill="white" font-size="50" font-family="Arial, sans-serif" font-weight="700">Sales Platform</text>
+  <text x="140" y="435" fill="white" font-size="34" font-family="Arial, sans-serif">Landscape sample image</text>
+</svg>

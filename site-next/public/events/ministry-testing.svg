@@ -1,0 +1,15 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A3324"/>
+      <stop offset="100%" stop-color="#4F8E68"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g3)"/>
+  <rect x="70" y="110" width="1060" height="455" rx="30" fill="rgba(8,24,14,0.28)"/>
+  <circle cx="180" cy="175" r="34" fill="rgba(237,255,243,0.35)"/>
+  <circle cx="245" cy="175" r="34" fill="rgba(237,255,243,0.2)"/>
+  <text x="120" y="300" fill="#EEFAF1" font-size="56" font-family="Arial, sans-serif">Ministry of Testing</text>
+  <text x="120" y="360" fill="#D7F1DD" font-size="34" font-family="Arial, sans-serif">Building Testability Into</text>
+  <text x="120" y="406" fill="#D7F1DD" font-size="34" font-family="Arial, sans-serif">Product Architecture</text>
+</svg>

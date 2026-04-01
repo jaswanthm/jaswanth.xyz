@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Ministry of Testing Portrait Placeholder</title>
+  <desc id="desc">Portrait placeholder for Ministry of Testing event card.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)" rx="42"/>
+  <rect x="92" y="102" width="716" height="84" rx="16" fill="rgba(255,255,255,0.28)"/>
+  <rect x="92" y="238" width="650" height="24" rx="10" fill="rgba(255,255,255,0.52)"/>
+  <rect x="92" y="274" width="560" height="24" rx="10" fill="rgba(255,255,255,0.42)"/>
+  <rect x="92" y="354" width="716" height="736" rx="22" fill="rgba(15,23,42,0.22)"/>
+  <text x="122" y="157" fill="white" font-size="38" font-family="Arial, sans-serif" font-weight="700">Ministry of Testing</text>
+  <text x="122" y="420" fill="white" font-size="30" font-family="Arial, sans-serif">Portrait sample</text>
+</svg>
