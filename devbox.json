@@ -1,19 +1,14 @@
 {
-    "packages": [
-      "ruby_3_1",
-      "bundler",
+  "packages": [
     "nodejs_22",
-    "nodePackages.npm",
-      "gcc",
-      "gnumake"
-    ],
-    "shell": {
-      "init_hook": [
-      "bundle install",
+    "nodePackages.npm"
+  ],
+  "shell": {
+    "init_hook": [
       "if [ -f site-next/package.json ]; then (cd site-next && npm install); fi"
-      ]
-    },
-    "env": {
-      "LANG": "en_US.UTF-8"
-    }
+    ]
+  },
+  "env": {
+    "LANG": "en_US.UTF-8"
   }
+}
