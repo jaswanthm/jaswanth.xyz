@@ -12,11 +12,16 @@ type WorkFrontmatter = {
   company: string;
   sortOrder: number;
   summary: string;
+  workAnimation?: WorkAnimationKey;
   portraitImage?: string;
   portraitImageAlt?: string;
+  portraitImageOrientation?: "portrait" | "landscape";
   landscapeImage?: string;
   landscapeImageAlt?: string;
+  landscapeImageOrientation?: "portrait" | "landscape";
 };
+
+export type WorkAnimationKey = "taxi-route" | "ai-coach-chat";
 
 type WorkImage = {
   src: string;
@@ -78,7 +83,7 @@ export async function getWorkEntries(): Promise<WorkEntry[]> {
         images.push({
           src: frontmatter.landscapeImage,
           alt: frontmatter.landscapeImageAlt || `${frontmatter.title} landscape image`,
-          orientation: "landscape",
+          orientation: frontmatter.landscapeImageOrientation || "landscape",
         });
       }
 
@@ -86,7 +91,7 @@ export async function getWorkEntries(): Promise<WorkEntry[]> {
         images.push({
           src: frontmatter.portraitImage,
           alt: frontmatter.portraitImageAlt || `${frontmatter.title} portrait image`,
-          orientation: "portrait",
+          orientation: frontmatter.portraitImageOrientation || "portrait",
         });
       }
 

@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { WorkEntry } from "@/lib/content";
+import { WorkCardAnimation } from "@/components/work-card-animation";
 
 type WorkCardProps = {
   item: WorkEntry;
@@ -11,6 +12,7 @@ type WorkCardProps = {
 
 export function WorkCard({ item }: WorkCardProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const allPortrait = item.images.length > 1 && item.images.every((image) => image.orientation === "portrait");
 
   return (
     <motion.article
@@ -20,8 +22,10 @@ export function WorkCard({ item }: WorkCardProps) {
       transition={{ duration: 0.2, ease: "easeOut" }}
     >
       <button onClick={() => setIsOpen((current) => !current)} aria-expanded={isOpen}>
-        {item.images.length > 0 ? (
-          <div className={`work-media work-media-count-${item.images.length}`}>
+        {item.workAnimation ? (
+          <WorkCardAnimation animation={item.workAnimation} />
+        ) : item.images.length > 0 ? (
+          <div className={`work-media work-media-count-${item.images.length} ${allPortrait ? "work-media-all-portrait" : ""}`}>
             {item.images.map((image) => (
               <div key={`${item.slug}-${image.src}`} className={`work-media-frame work-media-${image.orientation}`}>
                 <Image
@@ -29,7 +33,7 @@ export function WorkCard({ item }: WorkCardProps) {
                   alt={image.alt}
                   fill
                   sizes="(max-width: 920px) 100vw, (max-width: 1200px) 60vw, 34vw"
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: image.orientation === "portrait" ? "contain" : "cover" }}
                 />
               </div>
             ))}

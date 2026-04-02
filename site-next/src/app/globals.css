@@ -415,6 +415,294 @@ a {
   margin-bottom: 0.85rem;
 }
 
+.work-animation {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(23, 32, 43, 0.16);
+  margin-bottom: 0.85rem;
+}
+
+.work-animation-taxi {
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(165deg, #e8eef3, #f5f8fb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem;
+}
+
+.ride-phone {
+  width: min(260px, 94%);
+  height: 100%;
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.2);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.16);
+  background: #0f172a;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 28px 1fr auto;
+}
+
+.ride-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.65rem;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+.ride-status {
+  width: 36px;
+  height: 9px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #22c55e, #facc15);
+}
+
+.ride-map {
+  position: relative;
+  background: #e5e8eb;
+  overflow: hidden;
+}
+
+.ride-water-yarra {
+  position: absolute;
+  left: 48%;
+  right: -18%;
+  bottom: -14%;
+  height: 34%;
+  background: #9fd3ea;
+  border-top: 1px solid rgba(56, 97, 120, 0.25);
+  transform: rotate(-8deg);
+}
+
+.ride-park-district {
+  position: absolute;
+  left: -14%;
+  top: -10%;
+  width: 42%;
+  height: 42%;
+  background: #b4dfb9;
+  transform: rotate(-8deg);
+  border: 1px solid rgba(67, 117, 74, 0.2);
+}
+
+.ride-map-texture {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+  background-size: 15px 15px;
+}
+
+.ride-road-network {
+  fill: none;
+}
+
+.ride-road-major {
+  stroke: #b7c3d1;
+  stroke-width: 16;
+  stroke-linecap: round;
+}
+
+.ride-road-secondary {
+  stroke: #c7d1db;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+
+.ride-route-svg {
+  position: absolute;
+  inset: 0;
+}
+
+.ride-road-edge {
+  fill: none;
+  stroke: rgba(148, 163, 184, 0.52);
+  stroke-width: 20;
+  stroke-linecap: round;
+}
+
+.ride-road-path {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.99);
+  stroke-width: 14;
+  stroke-linecap: round;
+}
+
+.ride-route-line {
+  fill: none;
+  stroke: #1d9bf0;
+  stroke-width: 3.4;
+  stroke-linecap: round;
+  stroke-dasharray: 1 6;
+}
+
+.ride-stop circle {
+  fill: #ffffff;
+  stroke: rgba(15, 23, 42, 0.24);
+  stroke-width: 1.4;
+}
+
+.ride-stop text {
+  font-size: 8px;
+  font-weight: 700;
+  fill: #0f172a;
+}
+
+.ride-stop-pickup circle {
+  fill: #1f9fe0;
+  stroke: #ffffff;
+}
+
+.ride-stop-pickup text,
+.ride-stop-dropoff text {
+  fill: #ffffff;
+}
+
+.ride-stop-dropoff circle {
+  fill: #ef4444;
+  stroke: #ffffff;
+  animation: ride-pin-pulse 1400ms ease-out infinite;
+}
+
+.ride-car-shell {
+  fill: #f59e0b;
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+.ride-car-core {
+  fill: #111827;
+}
+
+.ride-eta-pill {
+  position: absolute;
+  right: 0.55rem;
+  bottom: 0.68rem;
+  min-height: 1.25rem;
+  padding: 0 0.5rem;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.88);
+  color: #ffffff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ride-bottom-sheet {
+  background: #ffffff;
+  padding: 0.52rem 0.65rem 0.6rem;
+  border-top: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.ride-destination {
+  margin: 0;
+  font-size: 0.64rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.ride-sub {
+  margin: 0.18rem 0 0;
+  font-size: 0.56rem;
+  color: #475569;
+}
+
+.work-animation-chat {
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(160deg, #edf7ff, #f4f9ff);
+  padding: 0.7rem;
+}
+
+.chat-window {
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(23, 32, 43, 0.14);
+  background: rgba(255, 255, 255, 0.84);
+  padding: 0.65rem;
+  display: grid;
+  gap: 0.36rem;
+  align-content: start;
+}
+
+.chat-line {
+  margin: 0;
+  max-width: 88%;
+  font-size: 0.74rem;
+  line-height: 1.35;
+  padding: 0.38rem 0.5rem;
+  border-radius: 10px;
+}
+
+.chat-line-user {
+  justify-self: end;
+  background: rgba(0, 147, 208, 0.14);
+  color: #1b3651;
+}
+
+.chat-line-ai {
+  justify-self: start;
+  background: rgba(23, 32, 43, 0.08);
+  color: #1f3248;
+}
+
+.chat-line-stream {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: chat-stream 6.8s steps(120, end) infinite;
+}
+
+.chat-cursor {
+  display: inline-block;
+  width: 6px;
+  height: 0.95em;
+  margin-left: 3px;
+  vertical-align: -0.12em;
+  background: #0f2740;
+  animation: chat-cursor-blink 900ms steps(1, end) infinite;
+}
+
+@keyframes chat-stream {
+  0% {
+    max-width: 0;
+  }
+  76% {
+    max-width: 100%;
+  }
+  100% {
+    max-width: 100%;
+  }
+}
+
+@keyframes ride-pin-pulse {
+  0% {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.88), 0 0 0 0 rgba(239, 68, 68, 0.24);
+  }
+  70% {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.88), 0 0 0 10px rgba(239, 68, 68, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.88), 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+@keyframes chat-cursor-blink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  46%,
+  100% {
+    opacity: 0;
+  }
+}
+
 .work-media-count-1 {
   grid-template-columns: 1fr;
 }
@@ -424,12 +712,16 @@ a {
   align-items: stretch;
 }
 
+.work-media-all-portrait {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .work-media-frame {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
   border: 1px solid rgba(23, 32, 43, 0.16);
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .work-media-landscape {
