@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Syne } from "next/font/google";
+import { GoogleAnalytics } from "@/components/google-analytics";
 import { TopNav } from "@/components/top-nav";
 import "./globals.css";
 
@@ -29,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${displayFont.variable} ${bodyFont.variable} antialiased`}>
+        <GoogleAnalytics />
         <TopNav />
         {children}
       </body>
