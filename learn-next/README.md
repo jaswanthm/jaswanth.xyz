@@ -56,14 +56,22 @@ customer records, or verification tokens. A successful overlay checkout routes t
 
 ## Deployment
 
-Create a separate Netlify site with this directory as its base:
+Create a separate Netlify site from the same GitHub repository. Configure:
 
 ```text
-learn-next
+Base directory: learn-next
+Package directory: (leave empty)
+Build command: npm run build
+Publish directory: .next
 ```
 
 The included `netlify.toml` builds the Next.js app. Configure the three Paddle environment
 values in Netlify, deploy, and attach `learn.jaswanth.foo` as the production custom domain.
+Its ignore rule skips deploys when a commit changes only the portfolio.
+
+The existing portfolio Netlify project continues to use the root `netlify.toml`, which
+sets `site-next` as its base directory and skips deploys when a commit changes only the
+course app.
 
 Before accepting payments, replace or expand the purchase terms if your final refund
 policy differs from the current billing-support language.
