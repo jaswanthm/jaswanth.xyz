@@ -21,7 +21,7 @@ export default async function WorkPage() {
         title="All Work"
         subtitle="Each card expands with context, scope, and execution details."
       >
-        <div className="work-grid">
+        <div className="work-grid work-page-grid">
           {workHighlights.map((item, index) => (
             <div key={item.title} className={`work-slot work-slot-${(index % 6) + 1}`}>
               <WorkCard item={item} />

@@ -712,6 +712,15 @@ a {
   background: linear-gradient(165deg, #fffde8, #fffef7);
 }
 
+.work-page-grid .work-card {
+  grid-column: span 4;
+}
+
+.home-two-column-grid .work-card,
+.home-two-column-grid .event-card {
+  grid-column: span 6;
+}
+
 .work-card button {
   appearance: none;
   border: 0;
@@ -1631,6 +1640,15 @@ a {
     grid-column: span 12;
   }
 
+  .work-page-grid .work-card {
+    grid-column: span 6;
+  }
+
+  .home-two-column-grid .work-card,
+  .home-two-column-grid .event-card {
+    grid-column: span 6;
+  }
+
   .work-media-count-2 {
     grid-template-columns: 1fr 1fr;
   }
@@ -1690,6 +1708,15 @@ a {
 
   .work-media-count-2 {
     grid-template-columns: 1fr;
+  }
+
+  .work-page-grid .work-card {
+    grid-column: span 12;
+  }
+
+  .home-two-column-grid .work-card,
+  .home-two-column-grid .event-card {
+    grid-column: span 12;
   }
 
   .site-nav {

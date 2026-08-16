@@ -77,7 +77,7 @@ export default async function Home() {
       </section>
 
       <AnimatedSection id="work" title="Selected Work" subtitle="Two highlights from larger case studies.">
-        <div className="work-grid">
+        <div className="work-grid home-two-column-grid">
           {featuredWork.map((item, index) => (
             <div key={item.title} className={`work-slot work-slot-${(index % 6) + 1}`}>
               <WorkCard item={item} />
@@ -90,7 +90,7 @@ export default async function Home() {
       </AnimatedSection>
 
       <AnimatedSection id="events" title="Speaking" subtitle="Recent talks and sessions from conferences.">
-        <div className="events-grid">
+        <div className="events-grid home-two-column-grid">
           {featuredEvents.map((event, index) => (
             <div key={event.title} className={`event-slot event-slot-${(index % 5) + 1}`}>
               <EventCard item={event} />
