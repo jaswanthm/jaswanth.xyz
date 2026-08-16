@@ -1,15 +1,37 @@
+import Image from "next/image";
 import { SiteFooter } from "@/components/site-footer";
 
 export default function AboutPage() {
   return (
     <main className="site-shell page-shell">
-      <section className="page-intro">
-        <p className="kicker">About</p>
-        <h1>Builder mindset. Product pace. Quality discipline.</h1>
-        <p>
-          I lead engineering teams that deliver ambitious product goals without trading off trust,
-          maintainability, or execution velocity.
-        </p>
+      <section className="about-hero">
+        <div className="page-intro about-intro">
+          <p className="kicker">About</p>
+          <h1>Builder mindset. Product pace. Quality discipline.</h1>
+          <p>
+            I lead engineering teams that deliver ambitious product goals without trading off trust,
+            maintainability, or execution velocity.
+          </p>
+          <div className="about-signals" aria-label="Leadership focus">
+            <span>GenAI products</span>
+            <span>Engineering leadership</span>
+            <span>Quality at scale</span>
+          </div>
+        </div>
+        <figure className="about-portrait">
+          <Image
+            src="/jaswanth-about.jpg"
+            alt="Jaswanth Manigundan"
+            fill
+            priority
+            unoptimized
+            sizes="(max-width: 720px) 93vw, 38vw"
+          />
+          <figcaption>
+            <strong>Jaswanth Manigundan</strong>
+            <span>Engineering leader · Melbourne</span>
+          </figcaption>
+        </figure>
       </section>
 
       <section className="about-grid" aria-label="About details">

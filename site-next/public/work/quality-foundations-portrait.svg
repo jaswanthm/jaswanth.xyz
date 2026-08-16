@@ -1,17 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
-  <title id="title">Quality Foundations Portrait Placeholder</title>
-  <desc id="desc">Portrait placeholder image for Quality Foundations work card.</desc>
+  <title id="title">Release confidence overview</title>
+  <desc id="desc">An illustrated dashboard summarizing quality, reliability and delivery health.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#22c55e" />
-      <stop offset="100%" stop-color="#0ea5e9" />
+      <stop offset="0%" stop-color="#57e3b4"/>
+      <stop offset="100%" stop-color="#67c8ff"/>
     </linearGradient>
   </defs>
-  <rect width="900" height="1200" fill="url(#bg)" rx="42" />
-  <rect x="96" y="110" width="708" height="82" rx="16" fill="rgba(255,255,255,0.28)" />
-  <rect x="96" y="236" width="520" height="22" rx="9" fill="rgba(255,255,255,0.55)" />
-  <rect x="96" y="271" width="650" height="22" rx="9" fill="rgba(255,255,255,0.44)" />
-  <rect x="96" y="356" width="708" height="724" rx="24" fill="rgba(15,23,42,0.23)" />
-  <text x="124" y="165" fill="white" font-size="40" font-family="Arial, sans-serif" font-weight="700">Quality Foundations</text>
-  <text x="124" y="420" fill="white" font-size="30" font-family="Arial, sans-serif">Portrait sample</text>
+  <rect width="900" height="1200" rx="42" fill="url(#bg)"/>
+  <circle cx="70" cy="1110" r="230" fill="#fff" opacity=".1"/>
+  <rect x="105" y="80" width="690" height="1040" rx="58" fill="#102d31" stroke="#fff" stroke-opacity=".55" stroke-width="4"/>
+  <rect x="345" y="105" width="210" height="20" rx="10" fill="#3d6268"/>
+  <text x="165" y="210" fill="#adc5c8" font-size="24" font-family="Arial, sans-serif" font-weight="700" letter-spacing="3">RELEASE CONFIDENCE</text>
+  <text x="165" y="285" fill="#f4fffb" font-size="62" font-family="Arial, sans-serif" font-weight="700">Healthy</text>
+
+  <circle cx="450" cy="485" r="145" fill="none" stroke="#244b50" stroke-width="34"/>
+  <path d="M329 565A145 145 0 1 1 571 565" fill="none" stroke="url(#bg)" stroke-width="34" stroke-linecap="round"/>
+  <text x="450" y="475" fill="#f4fffb" font-size="88" font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">92</text>
+  <text x="450" y="520" fill="#adc5c8" font-size="24" font-family="Arial, sans-serif" text-anchor="middle">SYSTEM SCORE</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="155" y="700" width="280" height="145" rx="28" fill="#193b40" stroke="#3d6268"/>
+    <text x="195" y="750" fill="#adc5c8" font-size="20">Test health</text>
+    <text x="195" y="810" fill="#f4fffb" font-size="48" font-weight="700">96%</text>
+    <circle cx="385" cy="785" r="16" fill="#57e3b4"/>
+
+    <rect x="465" y="700" width="280" height="145" rx="28" fill="#193b40" stroke="#3d6268"/>
+    <text x="505" y="750" fill="#adc5c8" font-size="20">Reliability</text>
+    <text x="505" y="810" fill="#f4fffb" font-size="48" font-weight="700">99.9</text>
+    <circle cx="695" cy="785" r="16" fill="#67c8ff"/>
+
+    <rect x="155" y="875" width="590" height="135" rx="28" fill="#193b40" stroke="#3d6268"/>
+    <text x="195" y="927" fill="#adc5c8" font-size="20">Feedback time</text>
+    <text x="195" y="978" fill="#f4fffb" font-size="42" font-weight="700">8m 24s</text>
+    <path d="M455 974c55-78 90 15 135-50s72 18 115-48" fill="none" stroke="url(#bg)" stroke-width="9" stroke-linecap="round"/>
+  </g>
 </svg>

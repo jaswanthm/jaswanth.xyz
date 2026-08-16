@@ -9,6 +9,8 @@ type EventCardProps = {
 };
 
 export function EventCard({ item }: EventCardProps) {
+  const isVideo = item.link.includes("youtube.com/") || item.link.includes("youtu.be/");
+
   return (
     <motion.article
       className="event-card"
@@ -26,6 +28,11 @@ export function EventCard({ item }: EventCardProps) {
           </div>
         )}
         <span className="event-year-chip">{item.year}</span>
+        {isVideo && (
+          <span className="event-play-chip" aria-hidden="true">
+            <span className="event-play-icon" />
+          </span>
+        )}
       </div>
       <div className="event-meta">
         <span className="pill">{item.event}</span>
@@ -33,7 +40,7 @@ export function EventCard({ item }: EventCardProps) {
         <p>{item.takeaway}</p>
         <p className="event-links">
           <a href={item.link} target="_blank" rel="noreferrer">
-            Open event page
+            {isVideo ? "Watch talk" : "Open event page"}
           </a>
         </p>
       </div>

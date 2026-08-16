@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -16,9 +17,12 @@ export function TopNav() {
   return (
     <header className="site-nav-wrap">
       <div className="site-nav">
-        <Link href="/" className="brand-link">
-          <span className="brand-dot" aria-hidden="true" />
-          Jaswanth Manigundan
+        <Link href="/" className="brand-link" aria-label="Jaswanth Manigundan, home">
+          <span className="brand-monogram" aria-hidden="true">
+            <span className="brand-j">j</span>
+            <span className="brand-a">a</span>
+            <span className="brand-s">s</span>
+          </span>
         </Link>
         <nav aria-label="Primary">
           <ul>
@@ -34,6 +38,16 @@ export function TopNav() {
             })}
           </ul>
         </nav>
+        <Link href="/about" className="nav-profile" aria-label="About Jaswanth Manigundan">
+          <Image
+            src="/jaswanth-profile.png"
+            alt=""
+            width={48}
+            height={48}
+            priority
+            unoptimized
+          />
+        </Link>
       </div>
     </header>
   );

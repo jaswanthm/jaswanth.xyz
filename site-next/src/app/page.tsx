@@ -17,43 +17,62 @@ export default async function Home() {
   return (
     <main className="site-shell">
       <section className="hero-bento" aria-labelledby="hero-title">
-        <div className="bento-card bento-intro">
-          <p className="kicker">From idea to production, responsibly</p>
-          <h1 id="hero-title">Ambitious AI ideas, delivered as dependable products.</h1>
+        <div className="bento-card hero-intro">
+          <p className="kicker">AI engineering leadership</p>
+          <h1 id="hero-title">AI ideas. Trusted products.</h1>
+          <p className="hero-lead">
+            Engineering leadership at the intersection of product pace, platform thinking, and quality.
+          </p>
           <div className="hero-cta-row">
-            <a className="btn-primary" href="https://www.linkedin.com/in/-jaswanth/" target="_blank" rel="noreferrer">
-              Start a thoughtful conversation
+            <a className="btn-primary" href="/work">
+              Explore my work
             </a>
-            <a className="btn-secondary" href="#events">
-              Talks and events
+            <a className="hero-text-link" href="https://www.linkedin.com/in/-jaswanth/" target="_blank" rel="noreferrer">
+              Let&apos;s talk <span aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
 
-        <div className="bento-card bento-profile">
-          <p className="rail-label">Profile Snapshot</p>
-          <p className="rail-value">Engineering Leader</p>
-          <p className="note-text">
-            I focus on practical innovation: strong engineering foundations, measurable quality,
-            and teams that move quickly without cutting corners. I care about outcomes, but also
-            how we get there: transparent decisions, inclusive collaboration, and technology that
-            earns user trust.
-          </p>
+        <div className="bento-card hero-command" aria-label="Jarvis AI product interface">
+          <div className="command-topbar">
+            <div>
+              <span className="command-mark" aria-hidden="true">J</span>
+              <p>Jarvis AI</p>
+            </div>
+            <span className="command-status"><i aria-hidden="true" /> Online</span>
+          </div>
+          <div className="command-conversation">
+            <div className="command-prompt">
+              <span>You</span>
+              <p>Turn this customer insight into a clear product decision.</p>
+            </div>
+            <div className="command-response">
+              <span className="command-spark" aria-hidden="true">✦</span>
+              <div>
+                <span>Jarvis</span>
+                <p>Prioritise a guided first-run experience and measure activation within seven days.</p>
+              </div>
+            </div>
+          </div>
+          <div className="command-footer">
+            <span><i className="check-icon" aria-hidden="true">✓</i> Quality checked</span>
+            <span><i className="ready-icon" aria-hidden="true" /> Ready to ship</span>
+          </div>
         </div>
 
-        <div className="bento-card bento-chip bento-focus">
-          <p className="rail-label">Focus</p>
-          <p className="rail-value">AI Platform · Quality · Web · Mobile</p>
+        <div className="bento-card hero-metric metric-experience">
+          <strong>{totalYears}+</strong>
+          <span>Years engineering</span>
         </div>
 
-        <div className="bento-card bento-chip bento-years">
-          <p className="rail-label">Experience</p>
-          <p className="rail-value">{totalYears}+ years</p>
+        <div className="bento-card hero-metric metric-focus">
+          <strong>GenAI → Production</strong>
+          <span>Current focus</span>
         </div>
 
-        <div className="bento-card bento-note">
-          <p className="note-title">Principles</p>
-          <p className="note-text">Trust over buzz. Craft over shortcuts.</p>
+        <div className="bento-card hero-metric metric-speaking">
+          <strong>{Math.floor(events.length / 10) * 10}+</strong>
+          <span>Talks and sessions</span>
         </div>
       </section>
 

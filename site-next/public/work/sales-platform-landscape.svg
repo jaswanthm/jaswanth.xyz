@@ -1,17 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Sales Platform Landscape Placeholder</title>
-  <desc id="desc">Landscape placeholder image for Sales Platform work card.</desc>
+  <title id="title">Sales data import workflow</title>
+  <desc id="desc">An illustrated workflow showing customer data moving through validation into a sales platform.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f97316" />
-      <stop offset="100%" stop-color="#ef4444" />
+      <stop offset="0%" stop-color="#18243a"/>
+      <stop offset="100%" stop-color="#2d1737"/>
     </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffb45f"/>
+      <stop offset="100%" stop-color="#ff6484"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#080c16" flood-opacity=".35"/>
+    </filter>
   </defs>
-  <rect width="1600" height="900" fill="url(#bg)" rx="48" />
-  <rect x="110" y="120" width="780" height="76" rx="14" fill="rgba(255,255,255,0.25)" />
-  <rect x="110" y="240" width="1180" height="25" rx="9" fill="rgba(255,255,255,0.48)" />
-  <rect x="110" y="280" width="980" height="25" rx="9" fill="rgba(255,255,255,0.38)" />
-  <rect x="110" y="370" width="1380" height="370" rx="22" fill="rgba(15,23,42,0.2)" />
-  <text x="140" y="173" fill="white" font-size="50" font-family="Arial, sans-serif" font-weight="700">Sales Platform</text>
-  <text x="140" y="435" fill="white" font-size="34" font-family="Arial, sans-serif">Landscape sample image</text>
+  <rect width="1600" height="900" rx="48" fill="url(#bg)"/>
+  <circle cx="1420" cy="80" r="230" fill="#ff6484" opacity=".08"/>
+  <circle cx="80" cy="850" r="260" fill="#ffb45f" opacity=".07"/>
+  <text x="105" y="115" fill="#ffb45f" font-size="24" font-family="Arial, sans-serif" font-weight="700" letter-spacing="5">SALES OPERATIONS</text>
+  <text x="105" y="180" fill="#fff8ef" font-size="52" font-family="Arial, sans-serif" font-weight="700">Reliable data, ready to work.</text>
+  <text x="105" y="225" fill="#b9c2d3" font-size="25" font-family="Arial, sans-serif">A guided path from bulk upload to trusted customer records.</text>
+
+  <path d="M330 505H1275" stroke="url(#flow)" stroke-width="12" stroke-linecap="round" opacity=".45"/>
+  <g filter="url(#shadow)">
+    <rect x="105" y="345" width="300" height="330" rx="30" fill="#222f47" stroke="#52617b"/>
+    <rect x="145" y="385" width="68" height="82" rx="12" fill="#ffb45f"/>
+    <path d="M165 409h28M165 427h28M165 445h18" stroke="#402215" stroke-width="6" stroke-linecap="round"/>
+    <text x="145" y="525" fill="#fff8ef" font-size="31" font-family="Arial, sans-serif" font-weight="700">Bulk import</text>
+    <text x="145" y="570" fill="#b9c2d3" font-size="23" font-family="Arial, sans-serif">CSV and customer data</text>
+    <rect x="145" y="610" width="180" height="12" rx="6" fill="#ffb45f" opacity=".8"/>
+
+    <rect x="520" y="345" width="300" height="330" rx="30" fill="#222f47" stroke="#52617b"/>
+    <circle cx="591" cy="426" r="41" fill="#61d6b3"/>
+    <path d="m570 427 15 15 29-33" fill="none" stroke="#12382f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="560" y="525" fill="#fff8ef" font-size="31" font-family="Arial, sans-serif" font-weight="700">Validate</text>
+    <text x="560" y="570" fill="#b9c2d3" font-size="23" font-family="Arial, sans-serif">Clean, match and review</text>
+    <g fill="#61d6b3">
+      <circle cx="566" cy="616" r="7"/>
+      <circle cx="596" cy="616" r="7" opacity=".7"/>
+      <circle cx="626" cy="616" r="7" opacity=".4"/>
+    </g>
+
+    <rect x="935" y="345" width="300" height="330" rx="30" fill="#222f47" stroke="#52617b"/>
+    <rect x="975" y="385" width="92" height="82" rx="18" fill="#ff6484"/>
+    <path d="M998 426h46M1021 403v46" stroke="#4b1727" stroke-width="8" stroke-linecap="round"/>
+    <text x="975" y="525" fill="#fff8ef" font-size="31" font-family="Arial, sans-serif" font-weight="700">Activate</text>
+    <text x="975" y="570" fill="#b9c2d3" font-size="23" font-family="Arial, sans-serif">Records ready for teams</text>
+    <rect x="975" y="605" width="205" height="32" rx="16" fill="#ff6484" opacity=".25"/>
+    <text x="1000" y="628" fill="#ffb8c6" font-size="17" font-family="Arial, sans-serif" font-weight="700">IMPORT COMPLETE</text>
+  </g>
+
+  <g fill="#fff8ef">
+    <circle cx="462" cy="505" r="23"/>
+    <path d="m455 493 15 12-15 12" fill="none" stroke="#402215" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="877" cy="505" r="23"/>
+    <path d="m870 493 15 12-15 12" fill="none" stroke="#402215" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <rect x="1305" y="345" width="190" height="330" rx="30" fill="#fff8ef"/>
+  <text x="1340" y="402" fill="#6c7481" font-size="18" font-family="Arial, sans-serif" font-weight="700">TODAY</text>
+  <text x="1340" y="475" fill="#18243a" font-size="50" font-family="Arial, sans-serif" font-weight="700">98.7%</text>
+  <text x="1340" y="510" fill="#6c7481" font-size="19" font-family="Arial, sans-serif">valid records</text>
+  <path d="M1340 605c35-80 70 25 120-100" fill="none" stroke="url(#flow)" stroke-width="9" stroke-linecap="round"/>
 </svg>

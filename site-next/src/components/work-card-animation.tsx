@@ -71,15 +71,48 @@ function TaxiRouteAnimation() {
 
 function AiCoachChatAnimation() {
   return (
-    <div className="work-animation work-animation-chat" aria-hidden="true">
-      <div className="chat-window">
-        <p className="chat-line chat-line-user">Help me write a delivery goal.</p>
-        <p className="chat-line chat-line-ai">Absolutely. What outcome and timeframe are you targeting?</p>
-        <p className="chat-line chat-line-user">Improve onboarding activation in Q3.</p>
-        <p className="chat-line chat-line-ai chat-line-stream">
-          Delivery goal: Increase activation from 42% to 55% by end of Q3 by reducing setup friction and running weekly experiments.
-          <span className="chat-cursor" />
-        </p>
+    <div className="work-animation work-animation-coach" aria-hidden="true">
+      <div className="coach-studio">
+        <div className="coach-topbar">
+          <div>
+            <span className="coach-logo">✦</span>
+            <strong>AI Coach</strong>
+          </div>
+          <span className="coach-mode">Goal studio</span>
+        </div>
+        <div className="coach-canvas">
+          <div className="coach-rail">
+            <span className="is-active">✦</span>
+            <span>◎</span>
+            <span>↗</span>
+          </div>
+          <div className="coach-workspace">
+            <div className="coach-context">
+              <span>Focus</span>
+              <p>Improve onboarding activation</p>
+            </div>
+            <div className="coach-goal-card">
+              <div className="coach-goal-head">
+                <span>Suggested goal</span>
+                <i>Ready</i>
+              </div>
+              <strong>Lift activation to 55% by Q3</strong>
+              <div className="coach-progress">
+                <span><i /></span>
+                <small>42% baseline</small>
+                <small>55% target</small>
+              </div>
+              <div className="coach-signals">
+                <span>✓ Measurable</span>
+                <span>✓ Time-bound</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="coach-prompt">
+          <span>Ask AI Coach to refine this goal</span>
+          <i>↑</i>
+        </div>
       </div>
     </div>
   );

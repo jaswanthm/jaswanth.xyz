@@ -1,17 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Quality Foundations Landscape Placeholder</title>
-  <desc id="desc">Landscape placeholder image for Quality Foundations work card.</desc>
+  <title id="title">Quality engineering signal map</title>
+  <desc id="desc">An illustrated system map connecting tests, delivery, reliability and customer signals.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="100%" stop-color="#14b8a6" />
+      <stop offset="0%" stop-color="#102d31"/>
+      <stop offset="100%" stop-color="#14213a"/>
     </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#57e3b4"/>
+      <stop offset="100%" stop-color="#67c8ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="1600" height="900" fill="url(#bg)" rx="48" />
-  <rect x="120" y="120" width="840" height="76" rx="14" fill="rgba(255,255,255,0.27)" />
-  <rect x="120" y="240" width="1100" height="25" rx="9" fill="rgba(255,255,255,0.48)" />
-  <rect x="120" y="280" width="940" height="25" rx="9" fill="rgba(255,255,255,0.38)" />
-  <rect x="120" y="372" width="1360" height="360" rx="22" fill="rgba(15,23,42,0.22)" />
-  <text x="145" y="173" fill="white" font-size="50" font-family="Arial, sans-serif" font-weight="700">Quality Foundations</text>
-  <text x="145" y="438" fill="white" font-size="34" font-family="Arial, sans-serif">Landscape sample image</text>
+  <rect width="1600" height="900" rx="48" fill="url(#bg)"/>
+  <path d="M0 710C300 570 385 850 690 700s480-20 910-210" fill="none" stroke="#67c8ff" stroke-opacity=".08" stroke-width="140"/>
+  <text x="100" y="110" fill="#57e3b4" font-size="24" font-family="Arial, sans-serif" font-weight="700" letter-spacing="5">QUALITY FOUNDATIONS</text>
+  <text x="100" y="175" fill="#f4fffb" font-size="52" font-family="Arial, sans-serif" font-weight="700">Confidence is a connected system.</text>
+  <text x="100" y="220" fill="#adc5c8" font-size="25" font-family="Arial, sans-serif">Signals become useful when teams can see how they work together.</text>
+
+  <g fill="none" stroke="#67c8ff" stroke-opacity=".35" stroke-width="5">
+    <path d="M800 490 390 390M800 490 390 655M800 490 1210 390M800 490 1210 655"/>
+  </g>
+  <g fill="#67c8ff">
+    <circle cx="595" cy="440" r="8"/><circle cx="1005" cy="440" r="8"/>
+    <circle cx="595" cy="572" r="8"/><circle cx="1005" cy="572" r="8"/>
+  </g>
+
+  <g font-family="Arial, sans-serif">
+    <circle cx="800" cy="490" r="135" fill="url(#signal)" opacity=".18" filter="url(#glow)"/>
+    <circle cx="800" cy="490" r="100" fill="#183b43" stroke="#57e3b4" stroke-width="4"/>
+    <path d="m755 490 30 30 64-74" fill="none" stroke="#57e3b4" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="800" y="635" fill="#f4fffb" font-size="24" font-weight="700" text-anchor="middle">RELEASE CONFIDENCE</text>
+
+    <g>
+      <rect x="190" y="310" width="400" height="165" rx="28" fill="#19333b" stroke="#3d6268"/>
+      <circle cx="255" cy="377" r="28" fill="#57e3b4"/>
+      <path d="m243 377 9 9 18-21" fill="none" stroke="#12382f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="310" y="372" fill="#f4fffb" font-size="28" font-weight="700">Test signals</text>
+      <text x="310" y="410" fill="#adc5c8" font-size="21">Fast, stable feedback</text>
+
+      <rect x="190" y="575" width="400" height="165" rx="28" fill="#19333b" stroke="#3d6268"/>
+      <circle cx="255" cy="642" r="28" fill="#67c8ff"/>
+      <path d="M238 649c15-30 27 15 48-22" fill="none" stroke="#12304a" stroke-width="6" stroke-linecap="round"/>
+      <text x="310" y="637" fill="#f4fffb" font-size="28" font-weight="700">Delivery flow</text>
+      <text x="310" y="675" fill="#adc5c8" font-size="21">Lead time and recovery</text>
+
+      <rect x="1010" y="310" width="400" height="165" rx="28" fill="#19333b" stroke="#3d6268"/>
+      <circle cx="1075" cy="377" r="28" fill="#ffc96b"/>
+      <path d="M1059 390v-24h32v24M1068 366v-12h14v12" fill="none" stroke="#493415" stroke-width="5"/>
+      <text x="1130" y="372" fill="#f4fffb" font-size="28" font-weight="700">Reliability</text>
+      <text x="1130" y="410" fill="#adc5c8" font-size="21">Healthy services</text>
+
+      <rect x="1010" y="575" width="400" height="165" rx="28" fill="#19333b" stroke="#3d6268"/>
+      <circle cx="1075" cy="642" r="28" fill="#f58ca8"/>
+      <path d="M1060 642h30M1075 627v30" stroke="#4c1d2b" stroke-width="6" stroke-linecap="round"/>
+      <text x="1130" y="637" fill="#f4fffb" font-size="28" font-weight="700">Customer impact</text>
+      <text x="1130" y="675" fill="#adc5c8" font-size="21">Outcomes over output</text>
+    </g>
+  </g>
 </svg>
