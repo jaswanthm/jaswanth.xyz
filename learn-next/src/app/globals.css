@@ -1,0 +1,715 @@
+:root {
+  --bg: #fef8e7;
+  --surface: #fffdf7;
+  --text: #17202b;
+  --muted: #52606d;
+  --line: rgba(23, 32, 43, 0.17);
+  --accent: #0093d0;
+  --accent-dark: #006f9f;
+  --orange: #f47a20;
+  --green: #18a37d;
+  --yellow: #f5cf33;
+  --nav: #0f1823;
+  --shadow: 0 18px 42px rgba(20, 20, 42, 0.09);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% 5%, rgba(0, 147, 208, 0.17), transparent 28rem),
+    radial-gradient(circle at 92% 16%, rgba(244, 122, 32, 0.12), transparent 30rem),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font-body), sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display), sans-serif;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(15, 24, 35, 0.96);
+  backdrop-filter: blur(16px);
+}
+
+.site-header::after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  content: "";
+  background: linear-gradient(90deg, var(--accent), var(--green), var(--orange));
+}
+
+.header-inner {
+  width: min(1080px, 92vw);
+  min-height: 4.5rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: white;
+}
+
+.brand > span {
+  display: grid;
+  width: 3.65rem;
+  height: 2.75rem;
+  place-items: center;
+  background: #08bec2;
+  clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
+  color: #071017;
+  font-family: Georgia, serif;
+  font-size: 1.65rem;
+}
+
+.brand strong {
+  font-family: var(--font-display), sans-serif;
+  font-size: 0.95rem;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+}
+
+.site-header nav a {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.site-header nav a:hover {
+  color: white;
+}
+
+.header-purchase {
+  min-height: 2.5rem;
+  padding: 0 1rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--yellow);
+  color: #15202a;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.header-purchase span {
+  margin-left: 0.5rem;
+}
+
+.header-inner .checkout-message {
+  display: none;
+}
+
+.course-hero,
+.course-main {
+  width: min(860px, 92vw);
+  margin: 0 auto;
+}
+
+.course-hero {
+  padding: 5.5rem 0 4.5rem;
+}
+
+.eyebrow,
+.section-label {
+  margin: 0 0 0.8rem;
+  color: var(--accent-dark);
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hero-copy h1 {
+  max-width: 11ch;
+  margin: 0;
+  font-size: clamp(3.5rem, 7vw, 6.4rem);
+  line-height: 0.9;
+  letter-spacing: -0.055em;
+}
+
+.hero-lead {
+  max-width: 42rem;
+  margin: 1.5rem 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 1.8rem;
+}
+
+.hero-actions .checkout-action {
+  width: 15rem;
+  flex: 0 0 auto;
+}
+
+.hero-actions > p {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.hero-actions > p strong {
+  font-size: 0.9rem;
+}
+
+.hero-actions > p span {
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+
+.checkout-note {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+  font-size: 0.67rem;
+}
+
+.purchase-button,
+.mobile-purchase-button {
+  width: 100%;
+  min-height: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  border: 0;
+  border-radius: 9px;
+  background: var(--accent);
+  box-shadow: 0 8px 20px rgba(0, 147, 208, 0.22);
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.purchase-button:hover,
+.mobile-purchase-button:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+}
+
+.checkout-message {
+  margin: 0.65rem 0 0;
+  color: #a13e08;
+  font-size: 0.74rem;
+  line-height: 1.4;
+}
+
+.system-preview {
+  margin-top: 3.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background: var(--nav);
+  box-shadow: 0 25px 55px rgba(15, 24, 35, 0.2);
+  color: white;
+}
+
+.preview-header,
+.preview-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  color: rgba(255, 255, 255, 0.63);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.68rem;
+}
+
+.preview-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.preview-header i {
+  color: #61d6b3;
+  font-style: normal;
+}
+
+.system-flow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 2.7rem 1.2rem;
+}
+
+.system-flow > div {
+  min-width: 0;
+  padding: 0.9rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.system-flow small,
+.system-flow strong,
+.system-flow span {
+  display: block;
+}
+
+.system-flow small {
+  margin-bottom: 1.5rem;
+  color: #73d7ff;
+  font-size: 0.6rem;
+}
+
+.system-flow strong {
+  overflow: hidden;
+  font-size: 0.72rem;
+  text-overflow: ellipsis;
+}
+
+.system-flow span {
+  margin-top: 0.2rem;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.59rem;
+  text-overflow: ellipsis;
+}
+
+.system-flow b {
+  color: #73d7ff;
+}
+
+.preview-status {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.preview-status i {
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-right: 0.35rem;
+  border-radius: 50%;
+  background: #61d6b3;
+}
+
+.preview-status span:last-child {
+  color: #61d6b3;
+}
+
+.course-main {
+  max-width: 860px;
+}
+
+.home-section {
+  padding: 5rem 0;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 6rem;
+}
+
+.home-section h2,
+.buy-section h2 {
+  max-width: 16ch;
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.outcomes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.outcomes > div {
+  display: flex;
+  gap: 0.7rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: rgba(255, 253, 247, 0.68);
+}
+
+.outcomes span {
+  color: var(--green);
+  font-weight: 800;
+}
+
+.outcomes p {
+  margin: 0;
+  font-size: 0.84rem;
+  font-weight: 650;
+}
+
+.curriculum {
+  margin: 2rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.curriculum li {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.curriculum span {
+  color: var(--orange);
+  font-family: var(--font-display), sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.curriculum p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.section-note {
+  max-width: 54ch;
+  margin: 1.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.fit-section {
+  display: block;
+}
+
+.fit-section ul {
+  max-width: 38rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fit-section li {
+  position: relative;
+  padding: 0.6rem 0 0.6rem 1.1rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.fit-section li::before {
+  position: absolute;
+  left: 0;
+  content: "•";
+  color: var(--green);
+}
+
+.fit-section > p {
+  max-width: 38rem;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.6;
+}
+
+.buy-section {
+  margin: 2rem 0 5rem;
+  padding: clamp(1.6rem, 5vw, 3rem);
+  border-radius: 20px;
+  background:
+    linear-gradient(135deg, rgba(0, 147, 208, 0.18), rgba(24, 163, 125, 0.12)),
+    var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.buy-section > div > p:last-child {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.buy-card {
+  max-width: 20rem;
+  margin-top: 2rem;
+  padding: 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.buy-card > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
+.buy-card > strong {
+  display: block;
+  margin: 0.2rem 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: 1.8rem;
+}
+
+.buy-card > strong span {
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.65rem;
+}
+
+.buy-card .purchase-button {
+  margin-top: 0.8rem;
+}
+
+.buy-card small {
+  display: block;
+  margin-top: 0.65rem;
+  color: var(--muted);
+  font-size: 0.63rem;
+  text-align: center;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 0 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer div {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.mobile-purchase {
+  display: none;
+}
+
+.simple-page {
+  width: min(760px, 90vw);
+  min-height: calc(100vh - 4.75rem);
+  margin: 0 auto;
+  padding: 5rem 0 2rem;
+}
+
+.success-card,
+.legal-page article {
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.success-mark {
+  display: grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1.5rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--green);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.simple-page h1 {
+  margin: 0 0 1.2rem;
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  line-height: 0.95;
+}
+
+.simple-page h2 {
+  margin: 2rem 0 0.6rem;
+  font-size: 1.2rem;
+}
+
+.simple-page article > p,
+.success-card > p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.simple-page article a,
+.text-link {
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .course-hero {
+    padding: 4rem 0;
+  }
+
+  .system-preview {
+    max-width: 34rem;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    padding-bottom: 4.6rem;
+  }
+
+  .header-inner {
+    min-height: 4rem;
+  }
+
+  .brand strong,
+  .site-header nav,
+  .header-inner > .checkout-action {
+    display: none;
+  }
+
+  .course-hero {
+    padding: 3rem 0;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(3rem, 16vw, 4.4rem);
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-actions .checkout-action {
+    width: 100%;
+  }
+
+  .system-flow {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .system-flow b {
+    height: 0.7rem;
+    transform: rotate(90deg);
+    text-align: center;
+  }
+
+  .system-flow small {
+    margin-bottom: 0.6rem;
+  }
+
+  .outcomes {
+    grid-template-columns: 1fr;
+  }
+
+  .home-section {
+    padding: 3.5rem 0;
+  }
+
+  .buy-section {
+    margin-bottom: 3.5rem;
+  }
+
+  .site-footer {
+    flex-direction: column;
+  }
+
+  .mobile-purchase {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 40;
+    min-height: 4.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.65rem 4vw;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(15, 24, 35, 0.97);
+    color: white;
+    backdrop-filter: blur(16px);
+  }
+
+  .mobile-purchase > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-purchase strong {
+    font-size: 0.88rem;
+  }
+
+  .mobile-purchase span {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.65rem;
+  }
+
+  .mobile-purchase .checkout-action {
+    width: 46%;
+  }
+
+  .mobile-purchase-button {
+    min-height: 2.8rem;
+    border-radius: 8px;
+    font-size: 0.76rem;
+  }
+
+  .mobile-purchase .checkout-message {
+    position: fixed;
+    right: 4vw;
+    bottom: 5rem;
+    left: 4vw;
+    padding: 0.7rem;
+    border-radius: 6px;
+    background: white;
+    color: #a13e08;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
